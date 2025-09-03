@@ -217,5 +217,27 @@ export const characters: Character[] = [
       "吹き飛ばし効果"
     ],
     "image": "/images/Xingqiu.png"
+  },
+  {
+    "id": 9,
+    "name": "凝光",
+    "element": "岩",
+    "weapon": "法器",
+    "region": "璃月",
+    "ascensionStat": "岩元素ダメージ",
+    "energyCost": "40族",
+    "abilities": [
+      "サブ火力",
+      "メイン火力",
+      "岩元素創造物",
+      "一部通行不可効果",
+      "複数コスチューム持ち",
+      "元素ダメージバフ",
+      "CTリセット効果",
+      "元素耐性バフ",
+      "吹き飛ばし効果",
+      "重量判定"
+    ],
+    "image": "/images/Ningguang.png"
   }
 ];
