@@ -14,6 +14,15 @@ function App() {
   const [selectedAscensionStat, setSelectedAscensionStat] = useState<string>("全て");
   const [selectedEnergyCost, setSelectedEnergyCost] = useState<string>("全て");
   const [selectedAbilities, setSelectedAbilities] = useState<string[]>([]);
+  
+  const [sortByReading, setSortReading] = useState(false);
+  const displayedCharacters = [...characters];
+
+  if(sortByReading){
+    displayedCharacters.sort((a,b) =>
+      a.reading.localeCompare(b.reading, "ja")
+    );
+  }
 
   const toggleAbility = (ability:string) =>{
     setSelectedAbilities((prev) =>
@@ -37,12 +46,27 @@ function App() {
     return elementMatch && weaponMatch && regionMatch && ascensionStatMatch && energyCostMatch &&abilityMatch;
   });
 
+
   return (
 
 
     <div style={{padding: "20px"}}>
       <h1>キャラクター図鑑</h1>
 
+      <div>
+        <button onClick={() => setSortReading(!sortByReading)}>
+          {sortByReading ? "通常の順番に戻す" : "名前順にソート"}
+        </button>
+
+        <ul>
+          {displayedCharacters.map((c) =>(
+            <li key={c.name}>
+              {c.name} ({c.reading}) - {c.weapon}
+            </li>
+          ))}
+        </ul>
+      </div>
+      
     {/* フィルター用セレクトボックス */}
       <div>
         <label>元素で絞り込み</label>

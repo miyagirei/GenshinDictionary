@@ -6,6 +6,7 @@ const tsContent = `
 export type Character = {
     id: number;
     name : string;
+    reading : string;
     element: "炎" | "水" | "雷" | "氷" | "岩" | "風" | "草";
     weapon: "片手剣" | "両手剣" | "槍" | "弓" | "法器";
     region:"モンド" | "璃月" | "稲妻" | "スメール" | "フォンテーヌ" | "ナタ" | "ナド・クライ" | "その他";

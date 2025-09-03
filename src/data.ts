@@ -2,6 +2,7 @@
 export type Character = {
     id: number;
     name : string;
+    reading : string;
     element: "炎" | "水" | "雷" | "氷" | "岩" | "風" | "草";
     weapon: "片手剣" | "両手剣" | "槍" | "弓" | "法器";
     region:"モンド" | "璃月" | "稲妻" | "スメール" | "フォンテーヌ" | "ナタ" | "ナド・クライ" | "その他";
@@ -16,6 +17,7 @@ export const characters: Character[] = [
   {
     "id": 1,
     "name": "アンバー",
+    "reading": "あんばー",
     "element": "炎",
     "weapon": "弓",
     "region": "モンド",
@@ -42,6 +44,7 @@ export const characters: Character[] = [
   {
     "id": 2,
     "name": "ガイア",
+    "reading": "がいあ",
     "element": "氷",
     "weapon": "片手剣",
     "region": "モンド",
@@ -68,6 +71,7 @@ export const characters: Character[] = [
   {
     "id": 3,
     "name": "リサ",
+    "reading": "りさ",
     "element": "雷",
     "weapon": "法器",
     "region": "モンド",
@@ -91,6 +95,7 @@ export const characters: Character[] = [
   {
     "id": 4,
     "name": "バーバラ",
+    "reading": "ばーばら",
     "element": "水",
     "weapon": "法器",
     "region": "モンド",
@@ -116,6 +121,7 @@ export const characters: Character[] = [
   {
     "id": 5,
     "name": "レザー",
+    "reading": "れざー",
     "element": "雷",
     "weapon": "両手剣",
     "region": "モンド",
@@ -142,6 +148,7 @@ export const characters: Character[] = [
   {
     "id": 6,
     "name": "香菱",
+    "reading": "しゃんりん",
     "element": "炎",
     "weapon": "槍",
     "region": "璃月",
@@ -154,6 +161,7 @@ export const characters: Character[] = [
       "サブ火力",
       "高頻度元素付着",
       "スナップショット持ち",
+      "自動攻撃",
       "特殊な元素付着CT",
       "複数コスチューム持ち"
     ],
@@ -162,6 +170,7 @@ export const characters: Character[] = [
   {
     "id": 7,
     "name": "北斗",
+    "reading": "ほくと",
     "element": "雷",
     "weapon": "両手剣",
     "region": "璃月",
@@ -193,6 +202,7 @@ export const characters: Character[] = [
   {
     "id": 8,
     "name": "行秋",
+    "reading": "ゆくあき",
     "element": "水",
     "weapon": "片手剣",
     "region": "璃月",
@@ -221,6 +231,7 @@ export const characters: Character[] = [
   {
     "id": 9,
     "name": "凝光",
+    "reading": "ぎょうこう",
     "element": "岩",
     "weapon": "法器",
     "region": "璃月",
@@ -239,5 +250,58 @@ export const characters: Character[] = [
       "重量判定"
     ],
     "image": "/images/Ningguang.png"
+  },
+  {
+    "id": 10,
+    "name": "フィッシュル",
+    "reading": "ふぃっしゅる",
+    "element": "雷",
+    "weapon": "弓",
+    "region": "モンド",
+    "ascensionStat": "攻撃力",
+    "energyCost": "60族",
+    "abilities": [
+      "追撃能力:通常攻撃",
+      "メイン火力",
+      "サブ火力",
+      "回復",
+      "自己回復",
+      "単体回復",
+      "高頻度元素付着",
+      "一部攻撃無効化",
+      "複数コスチューム持ち",
+      "スナップショット持ち",
+      "自動攻撃"
+    ],
+    "image": "/images/Fischl.png"
+  },
+  {
+    "id": 11,
+    "name": "ベネット",
+    "reading": "べねっと",
+    "element": "炎",
+    "weapon": "片手剣",
+    "region": "モンド",
+    "ascensionStat": "元素チャージ効率",
+    "energyCost": "60族",
+    "abilities": [
+      "メイン火力",
+      "サブ火力",
+      "回復",
+      "自己回復",
+      "他キャラ回復",
+      "単体回復",
+      "攻撃力バフ",
+      "元素ダメージバフ",
+      "元素付与:キャラ",
+      "元素付与:武器",
+      "爆破",
+      "吹き飛ばし効果",
+      "スキルCTバフ:自キャラ",
+      "2U持ち",
+      "複数コスチューム持ち",
+      "元素チャージ効率バフ:自キャラ"
+    ],
+    "image": "/images/Bennett.png"
   }
 ];

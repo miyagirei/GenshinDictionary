@@ -4,6 +4,7 @@ import { elements, weapons, regions, ascensionStats, abilityOptions, energyCosts
 type CharacterInput = {
     id: number;
     name : string;
+    reading : string;
     element: string;
     weapon: string;
     region:string;
@@ -17,6 +18,7 @@ const AddCharacterFrom: React.FC = () => {
     const [char, setChar] = useState<CharacterInput>({
         id: Date.now(),
         name: "",
+        reading : "",
         element: "",
         weapon: "",
         region:"",
@@ -60,6 +62,12 @@ const AddCharacterFrom: React.FC = () => {
             <label>
                 名前:
                 <input type="text" name="name" value={char.name} onChange={handleChange}/>
+            </label>
+            <br />
+
+            <label>
+                ふりがな:
+                <input type="text" name="reading" value={char.reading} onChange={handleChange}/>
             </label>
             <br />
 
