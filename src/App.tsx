@@ -16,14 +16,7 @@ function App() {
   const [selectedAbilities, setSelectedAbilities] = useState<string[]>([]);
   
   const [sortByReading, setSortReading] = useState(false);
-  const displayedCharacters = [...characters];
-
-  if(sortByReading){
-    displayedCharacters.sort((a,b) =>
-      a.reading.localeCompare(b.reading, "ja")
-    );
-  }
-
+  
   const toggleAbility = (ability:string) =>{
     setSelectedAbilities((prev) =>
       prev.includes(ability)
@@ -42,10 +35,17 @@ function App() {
     const abilityMatch = 
     selectedAbilities.length === 0 ||
     selectedAbilities.every((a) => c.abilities.includes(a));
-
+    
     return elementMatch && weaponMatch && regionMatch && ascensionStatMatch && energyCostMatch &&abilityMatch;
   });
+  
+  const displayedCharacters = [...filteredCharacter];
 
+  if(sortByReading){
+    displayedCharacters.sort((a,b) =>
+      a.reading.localeCompare(b.reading, "ja")
+    );
+  }
 
   return (
 
@@ -53,20 +53,6 @@ function App() {
     <div style={{padding: "20px"}}>
       <h1>キャラクター図鑑</h1>
 
-      <div>
-        <button onClick={() => setSortReading(!sortByReading)}>
-          {sortByReading ? "通常の順番に戻す" : "名前順にソート"}
-        </button>
-
-        <ul>
-          {displayedCharacters.map((c) =>(
-            <li key={c.name}>
-              {c.name} ({c.reading}) - {c.weapon}
-            </li>
-          ))}
-        </ul>
-      </div>
-      
     {/* フィルター用セレクトボックス */}
       <div>
         <label>元素で絞り込み</label>
@@ -210,6 +196,11 @@ function App() {
       </div>
 
       {/* キャラクター一覧 */}
+      <div>
+        <button onClick={() => setSortReading(!sortByReading)}>
+          {sortByReading ? "通常の順番に戻す" : "名前順にソート"}
+        </button>
+
       <div
       style={{
         display: "grid",
@@ -217,7 +208,7 @@ function App() {
         gap: "20px"
       }}
       >
-        {filteredCharacter.map((char: Character) => (
+        {displayedCharacters.map((char: Character) => (
           <div
           key = {char.id}
           style={{
@@ -258,6 +249,7 @@ function App() {
 
           </div>
         ))}
+        </div>
         </div>
 
         <div>
