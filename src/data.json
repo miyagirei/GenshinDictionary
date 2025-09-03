@@ -1,6 +1,6 @@
 [
 {
-  "id": 0,
+  "id": 1,
   "name": "アンバー",
   "element": "炎",
   "weapon": "弓",
@@ -26,7 +26,7 @@
   "image": "/images/Ambor.png"
 },
 {
-  "id": 1,
+  "id": 2,
   "name": "ガイア",
   "element": "氷",
   "weapon": "片手剣",
@@ -52,7 +52,7 @@
   "image": "/images/Kaeya.png"
 },
 {
-  "id": 2,
+  "id": 3,
   "name": "リサ",
   "element": "雷",
   "weapon": "法器",
@@ -75,7 +75,7 @@
   "image": "/images/Lisa.png"
 },
 {
-  "id": 3,
+  "id": 4,
   "name": "バーバラ",
   "element": "水",
   "weapon": "法器",
@@ -100,7 +100,7 @@
   "image": "/images/Barbara.png"
 },
 {
-  "id": 4,
+  "id": 5,
   "name": "レザー",
   "element": "雷",
   "weapon": "両手剣",
@@ -124,5 +124,25 @@
     "2U持ち"
   ],
   "image": "/images/Razor.png"
+},
+{
+  "id": 6,
+  "name": "香菱",
+  "element": "炎",
+  "weapon": "槍",
+  "region": "璃月",
+  "ascensionStat": "元素熟知",
+  "energyCost": "80族",
+  "abilities": [
+    "攻撃力バフ",
+    "元素耐性デバフ",
+    "元素ダメージバフ",
+    "サブ火力",
+    "高頻度元素付着",
+    "スナップショット持ち",
+    "特殊な元素付着CT",
+    "複数コスチューム持ち"
+  ],
+  "image": "/images/Xiangling.png"
 }
 ]

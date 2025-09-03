@@ -14,7 +14,7 @@ export type Character = {
 
 export const characters: Character[] = [
   {
-    "id": 0,
+    "id": 1,
     "name": "アンバー",
     "element": "炎",
     "weapon": "弓",
@@ -40,7 +40,7 @@ export const characters: Character[] = [
     "image": "/images/Ambor.png"
   },
   {
-    "id": 1,
+    "id": 2,
     "name": "ガイア",
     "element": "氷",
     "weapon": "片手剣",
@@ -66,7 +66,7 @@ export const characters: Character[] = [
     "image": "/images/Kaeya.png"
   },
   {
-    "id": 2,
+    "id": 3,
     "name": "リサ",
     "element": "雷",
     "weapon": "法器",
@@ -89,7 +89,7 @@ export const characters: Character[] = [
     "image": "/images/Lisa.png"
   },
   {
-    "id": 3,
+    "id": 4,
     "name": "バーバラ",
     "element": "水",
     "weapon": "法器",
@@ -112,5 +112,51 @@ export const characters: Character[] = [
       "エネルギー緩和:自キャラ"
     ],
     "image": "/images/Barbara.png"
+  },
+  {
+    "id": 5,
+    "name": "レザー",
+    "element": "雷",
+    "weapon": "両手剣",
+    "region": "モンド",
+    "ascensionStat": "物理ダメージ",
+    "energyCost": "80族",
+    "abilities": [
+      "中断耐性バフ:自キャラ",
+      "元素耐性バフ:自キャラ",
+      "攻撃速度バフ:自キャラ",
+      "一部攻撃無効化",
+      "エネルギー緩和:自キャラ",
+      "メイン火力",
+      "スキルCTバフ:自キャラ",
+      "移動スタミナバフ",
+      "元素チャージ効率バフ:自キャラ",
+      "会心率バフ:自キャラ",
+      "与ダメージバフ:自キャラ",
+      "防御力デバフ",
+      "爆破",
+      "2U持ち"
+    ],
+    "image": "/images/Razor.png"
+  },
+  {
+    "id": 6,
+    "name": "香菱",
+    "element": "炎",
+    "weapon": "槍",
+    "region": "璃月",
+    "ascensionStat": "元素熟知",
+    "energyCost": "80族",
+    "abilities": [
+      "攻撃力バフ",
+      "元素耐性デバフ",
+      "元素ダメージバフ",
+      "サブ火力",
+      "高頻度元素付着",
+      "スナップショット持ち",
+      "特殊な元素付着CT",
+      "複数コスチューム持ち"
+    ],
+    "image": "/images/Xiangling.png"
   }
 ];
