@@ -1,5 +1,5 @@
 import React,{useState} from "react";
-import { elements, weapons, regions, ascensionStats, abilityOptions, energyCosts, raritys } from "./constants";
+import { elements, weapons, regions, ascensionStats, abilityOptions, energyCosts, raritys, modelTypes } from "./constants";
 
 type CharacterInput = {
     id: number;
@@ -11,6 +11,7 @@ type CharacterInput = {
     region:string;
     ascensionStat: string; 
     energyCost: string;
+    modelType: string;
     abilities: string[];
     image: string;
 }
@@ -26,6 +27,7 @@ const AddCharacterFrom: React.FC = () => {
         region:"",
         ascensionStat: "", 
         energyCost: "", 
+        modelType: "",
         abilities: [],
         image: "",
     });
@@ -134,6 +136,17 @@ const AddCharacterFrom: React.FC = () => {
                     <option value="">選択してください</option>
                     {energyCosts.map((a) => (
                         <option key={a} value={a}>{a}</option>
+                    ))}
+                </select>
+            </label>
+            <br />
+
+             <label>
+                モデルタイプ:
+                <select name="modelType" value={char.modelType} onChange={handleChange}>
+                    <option value="">選択してください</option>
+                    {modelTypes.map((mt) => (
+                        <option key={mt} value={mt}>{mt}</option>
                     ))}
                 </select>
             </label>

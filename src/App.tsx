@@ -14,6 +14,7 @@ function App() {
   const [selectedRegion, setSelectedRegion] = useState<string>("全て");
   const [selectedAscensionStat, setSelectedAscensionStat] = useState<string>("全て");
   const [selectedEnergyCost, setSelectedEnergyCost] = useState<string>("全て");
+  const [selectedModelType, setSelectedModelType] = useState<string>("全て");
   const [selectedAbilities, setSelectedAbilities] = useState<string[]>([]);
   
   const [sortByReading, setSortReading] = useState(false);
@@ -34,11 +35,12 @@ function App() {
     const regionMatch = selectedRegion === "全て" || c.region === selectedRegion;
     const ascensionStatMatch = selectedAscensionStat === "全て" || c.ascensionStat === selectedAscensionStat;
     const energyCostMatch = selectedEnergyCost === "全て" || c.energyCost === selectedEnergyCost;
+    const energyModelType = selectedModelType === "全て" || c.modelType === selectedModelType;
     const abilityMatch = 
     selectedAbilities.length === 0 ||
     selectedAbilities.every((a) => c.abilities.includes(a));
     
-    return rarityMatch && elementMatch && weaponMatch && regionMatch && ascensionStatMatch && energyCostMatch &&abilityMatch;
+    return rarityMatch && elementMatch && weaponMatch && regionMatch && ascensionStatMatch && energyCostMatch && energyModelType &&abilityMatch;
   });
   
   const displayedCharacters = [...filteredCharacter];
@@ -188,6 +190,21 @@ function App() {
           <option value={"70族"}>70族</option>
           <option value={"80族"}>80族</option>
           <option value={"90族"}>90族</option>
+        </select>
+      </div>
+
+      <div>
+        <label>モデルタイプで絞り込み</label>
+        <select
+        value={selectedModelType}
+        onChange={(e) => setSelectedModelType(e.target.value)}
+        >
+          <option value={"全て"}>全て</option>
+          <option value={"長身男性"}>長身男性</option>
+          <option value={"長身女性"}>長身女性</option>
+          <option value={"中背男性"}>中背男性</option>
+          <option value={"中背女性"}>中背女性</option>
+          <option value={"小柄女性"}>小柄女性</option>
         </select>
       </div>
 

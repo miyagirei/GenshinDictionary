@@ -10,6 +10,7 @@ export type Character = {
     ascensionStat: "HP" | "攻撃力" | "防御力" | "元素熟知" | "会心率" | "会心ダメージ" | "与える治療効果" | "元素チャージ効率" | 
     "炎元素ダメージ" | "水元素ダメージ" | "草元素ダメージ" | "雷元素ダメージ" | "風元素ダメージ" | "氷元素ダメージ" | "岩元素ダメージ" | "物理ダメージ"; 
     energyCost: "40族" | "50族" |"60族" |"70族" |"80族" |"90族";
+    modelType: "長身男性"| "長身女性" | "中背男性" | "中背女性" | "小柄女性";
     abilities: string[];
     image: string;
 };
@@ -25,6 +26,7 @@ export const characters: Character[] = [
     "region": "モンド",
     "ascensionStat": "攻撃力",
     "energyCost": "40族",
+    "modelType": "中背女性",
     "abilities": [
       "攻撃力バフ",
       "高頻度元素付着",
@@ -53,6 +55,7 @@ export const characters: Character[] = [
     "region": "モンド",
     "ascensionStat": "元素チャージ効率",
     "energyCost": "60族",
+    "modelType": "長身男性",
     "abilities": [
       "回復",
       "自己回復",
@@ -81,6 +84,7 @@ export const characters: Character[] = [
     "region": "モンド",
     "ascensionStat": "元素熟知",
     "energyCost": "80族",
+    "modelType": "長身女性",
     "abilities": [
       "防御力デバフ",
       "メイン火力",
@@ -106,6 +110,7 @@ export const characters: Character[] = [
     "region": "モンド",
     "ascensionStat": "HP",
     "energyCost": "80族",
+    "modelType": "中背女性",
     "abilities": [
       "回復",
       "自己回復",
@@ -134,6 +139,7 @@ export const characters: Character[] = [
     "region": "モンド",
     "ascensionStat": "物理ダメージ",
     "energyCost": "80族",
+    "modelType": "中背男性",
     "abilities": [
       "中断耐性バフ:自キャラ",
       "元素耐性バフ:自キャラ",
@@ -162,6 +168,7 @@ export const characters: Character[] = [
     "region": "璃月",
     "ascensionStat": "元素熟知",
     "energyCost": "80族",
+    "modelType": "中背女性",
     "abilities": [
       "攻撃力バフ",
       "元素耐性デバフ",
@@ -185,6 +192,7 @@ export const characters: Character[] = [
     "region": "璃月",
     "ascensionStat": "雷元素ダメージ",
     "energyCost": "80族",
+    "modelType": "長身女性",
     "abilities": [
       "追撃能力:通常攻撃",
       "追撃能力:重撃",
@@ -218,6 +226,7 @@ export const characters: Character[] = [
     "region": "璃月",
     "ascensionStat": "攻撃力",
     "energyCost": "80族",
+    "modelType": "中背男性",
     "abilities": [
       "サブ火力",
       "追撃能力:通常攻撃",
@@ -248,6 +257,7 @@ export const characters: Character[] = [
     "region": "璃月",
     "ascensionStat": "岩元素ダメージ",
     "energyCost": "40族",
+    "modelType": "長身女性",
     "abilities": [
       "サブ火力",
       "メイン火力",
@@ -272,6 +282,7 @@ export const characters: Character[] = [
     "region": "モンド",
     "ascensionStat": "攻撃力",
     "energyCost": "60族",
+    "modelType": "中背女性",
     "abilities": [
       "追撃能力:通常攻撃",
       "メイン火力",
@@ -297,6 +308,7 @@ export const characters: Character[] = [
     "region": "モンド",
     "ascensionStat": "元素チャージ効率",
     "energyCost": "60族",
+    "modelType": "中背男性",
     "abilities": [
       "メイン火力",
       "サブ火力",
@@ -327,6 +339,7 @@ export const characters: Character[] = [
     "region": "モンド",
     "ascensionStat": "防御力",
     "energyCost": "60族",
+    "modelType": "中背女性",
     "abilities": [
       "攻撃力バフ",
       "回復",
@@ -355,6 +368,7 @@ export const characters: Character[] = [
     "region": "璃月",
     "ascensionStat": "攻撃力",
     "energyCost": "40族",
+    "modelType": "中背男性",
     "abilities": [
       "元素付与:武器",
       "メイン火力",
@@ -368,5 +382,28 @@ export const characters: Character[] = [
       "2U持ち"
     ],
     "image": "/images/Chongyun.png"
+  },
+  {
+    "id": 14,
+    "name": "スクロース",
+    "reading": "すくろーす",
+    "rarity": "星4",
+    "element": "風",
+    "weapon": "法器",
+    "region": "モンド",
+    "ascensionStat": "風元素ダメージ",
+    "energyCost": "80族",
+    "modelType": "中背女性",
+    "abilities": [
+      "吸い寄せ効果",
+      "元素熟知バフ",
+      "サブ火力",
+      "ドライバー",
+      "スキルCTバフ:自キャラ",
+      "元素ダメージバフ",
+      "特殊な元素付着CT",
+      "スナップショット持ち"
+    ],
+    "image": "/images/Sucrose.png"
   }
 ];
