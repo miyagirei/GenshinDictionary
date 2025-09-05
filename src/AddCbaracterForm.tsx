@@ -1,5 +1,5 @@
 import React,{useState} from "react";
-import { elements, weapons, regions, ascensionStats, abilityOptions, energyCosts } from "./constants";
+import { elements, weapons, regions, ascensionStats, abilityOptions, energyCosts, raritys } from "./constants";
 
 type CharacterInput = {
     id: number;
@@ -77,8 +77,8 @@ const AddCharacterFrom: React.FC = () => {
                 レアリティ:
                 <select name="rarity" value={char.rarity} onChange={handleChange}>
                     <option value="">選択してください</option>
-                    {elements.map((el) => (
-                        <option key={el} value={el}>{el}</option>
+                    {raritys.map((r) => (
+                        <option key={r} value={r}>{r}</option>
                     ))}
                 </select>
             </label>
