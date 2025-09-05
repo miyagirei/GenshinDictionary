@@ -344,5 +344,29 @@ export const characters: Character[] = [
       "吹き飛ばし効果"
     ],
     "image": "/images/Noel.png"
+  },
+  {
+    "id": 13,
+    "name": "重雲",
+    "reading": "ちょううん",
+    "rarity": "星4",
+    "element": "氷",
+    "weapon": "両手剣",
+    "region": "璃月",
+    "ascensionStat": "攻撃力",
+    "energyCost": "40族",
+    "abilities": [
+      "元素付与:武器",
+      "メイン火力",
+      "サブ火力",
+      "攻撃速度バフ",
+      "元素耐性デバフ",
+      "スキルCTバフ",
+      "エネルギー緩和:自キャラ",
+      "与ダメージバフ:自キャラ",
+      "吹き飛ばし効果",
+      "2U持ち"
+    ],
+    "image": "/images/Chongyun.png"
   }
 ];
