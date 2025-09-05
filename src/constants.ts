@@ -1,3 +1,4 @@
+export const raritys = ["星5" , "星4"];
 export const elements = ["炎" , "水" , "雷" , "氷" , "岩" , "風" , "草"];
 export const weapons = ["片手剣" , "両手剣" , "槍" , "弓" , "法器"];
 export const weaponOptions: Record<string,string> = {
@@ -18,3 +19,9 @@ export const abilityOptions  = ["メイン火力","サブ火力","ドライバ�
     "中断耐性バフ:自キャラ","中断耐性バフ", "移動速度バフ" , "移動スタミナバフ","スタミナ消費減少","攻撃速度バフ:自キャラ","攻撃速度バフ",
     "2U持ち","4U持ち","特殊な元素付着CT","スナップショット持ち","エネルギー緩和:自キャラ","エネルギー緩和","CTリセット効果",
     "岩元素創造物","一部通行不可効果","一部攻撃無効化","初期配布キャラ","複数コスチューム持ち" ];
+
+/* git update */
+
+//git add .
+//git commit -m "update"
+//git push

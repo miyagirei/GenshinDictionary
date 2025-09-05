@@ -8,6 +8,7 @@ import AddCharacterFrom from './AddCbaracterForm';
 import { abilityOptions, weaponOptions } from "./constants";
 
 function App() {
+  const [selectedRarity, setSelectedRarity] = useState<string>("全て");
   const [selectedElement, setSelectedElement] = useState<string>("全て");
   const [selectedWeapon, setSelectedWeapon] = useState<string>("全て");
   const [selectedRegion, setSelectedRegion] = useState<string>("全て");
@@ -27,6 +28,7 @@ function App() {
 
   //フィルター
   const filteredCharacter = characters.filter((c: Character)=>{
+    const rarityMatch = selectedRarity === "全て" || c.rarity === selectedRarity;
     const elementMatch = selectedElement === "全て" || c.element === selectedElement;
     const weaponMatch = selectedWeapon === "全て" || c.weapon === selectedWeapon;
     const regionMatch = selectedRegion === "全て" || c.region === selectedRegion;
@@ -36,7 +38,7 @@ function App() {
     selectedAbilities.length === 0 ||
     selectedAbilities.every((a) => c.abilities.includes(a));
     
-    return elementMatch && weaponMatch && regionMatch && ascensionStatMatch && energyCostMatch &&abilityMatch;
+    return rarityMatch && elementMatch && weaponMatch && regionMatch && ascensionStatMatch && energyCostMatch &&abilityMatch;
   });
   
   const displayedCharacters = [...filteredCharacter];
@@ -54,6 +56,18 @@ function App() {
       <h1>キャラクター図鑑</h1>
 
     {/* フィルター用セレクトボックス */}
+          <div>
+        <label>レアリティで絞り込み</label>
+        <select
+        value={selectedRarity}
+        onChange={(e) => setSelectedRarity(e.target.value)}
+        >
+          <option value={"全て"}>全て</option>
+          <option value={"星5"}>星5</option>
+          <option value={"星4"}>星4</option>
+        </select>
+      </div>
+
       <div>
         <label>元素で絞り込み</label>
         <select

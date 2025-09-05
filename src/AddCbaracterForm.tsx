@@ -5,6 +5,7 @@ type CharacterInput = {
     id: number;
     name : string;
     reading : string;
+    rarity: string;
     element: string;
     weapon: string;
     region:string;
@@ -19,6 +20,7 @@ const AddCharacterFrom: React.FC = () => {
         id: Date.now(),
         name: "",
         reading : "",
+        rarity: "",
         element: "",
         weapon: "",
         region:"",
@@ -68,6 +70,17 @@ const AddCharacterFrom: React.FC = () => {
             <label>
                 ふりがな:
                 <input type="text" name="reading" value={char.reading} onChange={handleChange}/>
+            </label>
+            <br />
+
+            <label>
+                レアリティ:
+                <select name="rarity" value={char.rarity} onChange={handleChange}>
+                    <option value="">選択してください</option>
+                    {elements.map((el) => (
+                        <option key={el} value={el}>{el}</option>
+                    ))}
+                </select>
             </label>
             <br />
 
