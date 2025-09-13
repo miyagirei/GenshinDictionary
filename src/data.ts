@@ -437,5 +437,31 @@ export const characters: Character[] = [
       "特殊な元素付着CT"
     ],
     "image": "/images/Qin.png"
+  },
+  {
+    "id": 16,
+    "name": "ディルック",
+    "reading": "でぃるっく",
+    "rarity": "星5",
+    "element": "炎",
+    "weapon": "両手剣",
+    "region": "モンド",
+    "ascensionStat": "会心率",
+    "energyCost": "40族",
+    "modelType": "長身男性",
+    "abilities": [
+      "メイン火力",
+      "元素付与:武器",
+      "元素ダメージバフ:自キャラ",
+      "与ダメージバフ:自キャラ",
+      "スタミナ消費減少",
+      "攻撃力バフ",
+      "攻撃速度バフ:自キャラ",
+      "2U持ち",
+      "吹き飛ばし効果",
+      "通常攻撃バフ:自キャラ",
+      "複数コスチューム持ち"
+    ],
+    "image": "/images/Diluc.png"
   }
 ];
