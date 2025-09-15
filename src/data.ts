@@ -492,5 +492,57 @@ export const characters: Character[] = [
       "自動攻撃"
     ],
     "image": "/images/Qiqi.png"
+  },
+  {
+    "id": 18,
+    "name": "モナ",
+    "reading": "もな",
+    "rarity": "星5",
+    "element": "水",
+    "weapon": "法器",
+    "region": "モンド",
+    "ascensionStat": "元素チャージ効率",
+    "energyCost": "60族",
+    "modelType": "中背女性",
+    "abilities": [
+      "関連反応バフ",
+      "元素ダメージバフ:自キャラ",
+      "会心率バフ",
+      "重撃バフ:自キャラ",
+      "デコイ",
+      "受けるダメージデバフ",
+      "複数コスチューム持ち",
+      "重量判定",
+      "2U持ち",
+      "特殊ダッシュ",
+      "スナップショット持ち"
+    ],
+    "image": "/images/Mona.png"
+  },
+  {
+    "id": 1757857974131,
+    "name": "刻晴",
+    "reading": "こくせい",
+    "rarity": "星5",
+    "element": "雷",
+    "weapon": "片手剣",
+    "region": "璃月",
+    "ascensionStat": "会心ダメージ",
+    "energyCost": "40族",
+    "modelType": "中背女性",
+    "abilities": [
+      "会心率バフ:自キャラ",
+      "元素付与:武器",
+      "エネルギー緩和",
+      "攻撃力バフ",
+      "元素ダメージバフ:自キャラ",
+      "2U持ち",
+      "特殊な元素付着CT",
+      "複数コスチューム持ち",
+      "ドライバー",
+      "メイン火力",
+      "元素チャージ効率バフ:自キャラ"
+    ],
+    "image": "/images/Keqing.png"
   }
 ];
